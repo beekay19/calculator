@@ -10,12 +10,7 @@ const equal = document.querySelector(".equal");
 keys.forEach(function (key) {
   key.addEventListener("click", function (e) {
     let val = e.target.innerText;
-    screen.value += val;
-    // if(e.target.innerText === '*'){
-    //     console.log(e)
-    //     // e.target.innerText = 'x'
-    // }
-    
+    screen.value += val;   
   });
 });
 
@@ -42,10 +37,6 @@ del.addEventListener("click", function () {
   screen.value = inputField;
 });
 
-let calculator;
-calculator = 22.2 / 2;
-
-// console.log(eval("24+23"));
 equal.addEventListener('click',function (e) {
     let sumX =  screen.value
     
@@ -53,7 +44,6 @@ equal.addEventListener('click',function (e) {
         alert('please enter a number')
     }else{
         screen.value = eval(sumX)
-        // console.log(typeof eval(sumX))
     }
 })
 
